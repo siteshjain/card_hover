@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background-color:#605f5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    height: 25rem;
+    min-width: 24rem;
+    width: 46rem;
+    box-shadow: rgba(0,0,0,0.13) 0.1px 5px 10px;
+    background-color: rgb(62, 59, 59);
+    position: relative;
+    border-radius: 2.5rem;
+    padding-left: 2rem;
+    color: #ffffff;
+}
+h1{
+    color: rgb(236, 141, 15);
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    transition: 0.3s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+p,a{
+    opacity: 0;
+    font-family: monospace;
+}
+p{
+    width: 21rem;
+    margin-bottom: 3rem;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(236, 141, 15);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+a:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.image{
+    width: 100%;
+    height: 40rem;
+    position: absolute;
+    top: 25%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+}
+
+.center:hover img{
+    left: 73%;
+    height: 43rem;
+    top:20%;
+}
+.center:hover h1{
+    font-size: 4.2rem;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.3rem;
+}
+
+.center:hover p,.center:hover a{
+    opacity: 1;
+}
+
+
+@media(max-width:945px){
+    .center{
+        min-width: 20rem;
+        width: 35rem;
+        height: 25rem;
+        margin-left: 2.3rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .center:hover h1{
+        font-size: 3.5rem;
+    }
+    .image{
+        left: 58%;
+    }
+
+
+}
